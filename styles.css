@@ -24,7 +24,7 @@ header h1 {
   margin-bottom: 30px;
 }
 
-/* GALLERY */
+/* GALLERY: griglia e figure uniformi */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -32,21 +32,49 @@ header h1 {
   margin-bottom: 40px;
 }
 
+/* Ogni figura diventa un contenitore verticale uniforme */
 .gallery figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
+  min-height: 160px; /* garantisce spazio uniforme per immagine + caption */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Link che contiene l'immagine occupa lo spazio necessario */
+.gallery a {
+  display: block;
+  width: 100%;
+}
+
+/* Immagini rettangolari, larghezza fissa, proporzioni mantenute */
 .gallery img {
-  width: 100px;      /* IMMAGINI RETTANGOLARI */
-  height: auto;      /* Mantiene proporzioni */
+  width: 100px;      /* larghezza fissa */
+  height: auto;      /* mantiene proporzioni */
   border-radius: 10px;
   display: block;
   margin: 0 auto;
   transition: transform 0.2s;
+  object-fit: cover;
 }
 
+/* Piccolo effetto hover */
 .gallery img:hover {
   transform: scale(1.05);
+}
+
+/* Caption (nome) sempre sotto l'immagine, centrato e con margine costante */
+.gallery figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.2;
+  width: 100%;
+  word-wrap: break-word;
 }
 
 /* Pagina persona */
@@ -62,4 +90,5 @@ header h1 {
 footer {
   text-align: center;
   margin-top: 40px;
-  color
+  color: #777;
+}
