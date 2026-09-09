@@ -1,4 +1,4 @@
-/* Font medievale per nomi e descrizioni */
+/* Font medievale */
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 
 /* Layout generale */
@@ -27,7 +27,7 @@ header h1 {
   margin-bottom: 20px;
 }
 
-/* Titolo sezione elegante e centrato */
+/* Titolo sezione elegante */
 .section-title {
   text-align: center;
   font-size: 1.4rem;
@@ -40,7 +40,6 @@ header h1 {
   position: relative;
 }
 
-/* Linee decorative */
 .section-title::before,
 .section-title::after {
   content: "";
@@ -91,7 +90,7 @@ header h1 {
   transform: scale(1.03);
 }
 
-/* Nome sotto le foto — medievale */
+/* Nome sotto le foto */
 .gallery figcaption {
   margin-top: 8px;
   font-size: 1rem;
@@ -99,4 +98,28 @@ header h1 {
   font-family: 'Uncial Antiqua', serif;
 }
 
-/* Pagina persona — immagine più pic
+/* Pagina persona — immagine piccola */
+.person-img {
+  max-width: 110px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 16px auto;
+}
+
+/* Descrizione medievale */
+.person-description {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #777;
+}
