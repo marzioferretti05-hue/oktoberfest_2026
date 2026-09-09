@@ -1,8 +1,9 @@
+/* Layout generale */
 body {
   font-family: Arial, sans-serif;
+  background: #f7f7f7;
   margin: 0;
-  background: #fff;
-  color: #111;
+  padding: 0;
 }
 
 .container {
@@ -11,24 +12,56 @@ body {
   padding: 20px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+/* Titoli */
+header h1 {
+  text-align: center;
+  margin-bottom: 5px;
 }
 
-.grid img {
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.gallery figure {
+  text-align: center;
+}
+
+.gallery img {
   width: 100%;
+  max-width: 150px;   /* DIMENSIONE IMMAGINI */
+  height: auto;
   border-radius: 10px;
-  cursor: pointer;
+  display: block;
+  margin: 0 auto;
   transition: transform 0.2s;
 }
 
-.grid img:hover {
+.gallery img:hover {
   transform: scale(1.05);
 }
 
+/* Pagina persona */
 .person-img {
-  max-width: 300px;
+  max-width: 250px;   /* DIMENSIONE FOTO PERSONA */
+  width: 100%;
+  height: auto;
   border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
 }
