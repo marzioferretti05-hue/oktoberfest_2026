@@ -37,9 +37,8 @@ header h1 {
 }
 
 .gallery img {
-  width: 100%;
-  max-width: 100px;   /* DIMENSIONE IMMAGINI: 100px */
-  height: auto;
+  width: 100px;      /* IMMAGINI RETTANGOLARI */
+  height: auto;      /* Mantiene proporzioni */
   border-radius: 10px;
   display: block;
   margin: 0 auto;
@@ -63,5 +62,4 @@ header h1 {
 footer {
   text-align: center;
   margin-top: 40px;
-  color: #777;
-}
+  color
