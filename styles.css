@@ -52,7 +52,7 @@ header h1 {
 
 /* Pagina persona */
 .person-img {
-  max-width: 250px;   /* DIMENSIONE FOTO PERSONA */
+  max-width: 50px;   /* DIMENSIONE FOTO PERSONA */
   width: 100%;
   height: auto;
   border-radius: 10px;
