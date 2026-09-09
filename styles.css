@@ -32,6 +32,51 @@ header h1 {
   margin-bottom: 40px;
 }
 
+/* Ogni figura è un contenitore verticale uniforme */
+.gallery figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* forza caption in basso */
+  text-align: center;
+  min-height: 170px; /* regola se vuoi più/meno spazio */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* wrapper per l'immagine: garantisce area fissa per tutte le immagini */
+.gallery .img-wrap {
+  width: 100%;
+  height: 110px;        /* altezza fissa dell'area immagine */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Immagini rettangolari, larghezza fissa, proporzioni mantenute */
+.gallery img {
+  width: 100px;         /* larghezza fissa */
+  height: auto;         /* mantiene proporzioni */
+  max-height: 110px;    /* non supera l'area immagine */
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.2s;
+}
+
+/* Caption (nome) sempre sotto l'immagine, centrato e con margine costante */
+.gallery figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.2;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+
 /* Ogni figura diventa un contenitore verticale uniforme */
 .gallery figure {
   display: flex;
