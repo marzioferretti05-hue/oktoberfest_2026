@@ -21,34 +21,34 @@ header h1 {
 .subtitle {
   text-align: center;
   color: #666;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-/* GALLERY: griglia e figure uniformi */
+/* GALLERY compatta */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 25px;
-  margin-bottom: 40px;
+  gap: 16px;
+  margin-bottom: 30px;
 }
 
-/* Ogni figura è un contenitore verticale uniforme */
+/* Figura come contenitore verticale uniforme, compatto */
 .gallery figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* forza caption in basso */
+  justify-content: flex-start;
   text-align: center;
-  min-height: 170px; /* regola se vuoi più/meno spazio */
+  min-height: 140px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* wrapper per l'immagine: garantisce area fissa per tutte le immagini */
+/* Wrapper che garantisce area immagine fissa */
 .gallery .img-wrap {
   width: 100%;
-  height: 110px;        /* altezza fissa dell'area immagine */
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,83 +57,41 @@ header h1 {
 
 /* Immagini rettangolari, larghezza fissa, proporzioni mantenute */
 .gallery img {
-  width: 100px;         /* larghezza fissa */
-  height: auto;         /* mantiene proporzioni */
-  max-height: 110px;    /* non supera l'area immagine */
+  width: 100px;
+  height: auto;
+  max-height: 90px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
   display: block;
-  transition: transform 0.2s;
+  transition: transform 0.15s;
 }
 
-/* Caption (nome) sempre sotto l'immagine, centrato e con margine costante */
-.gallery figcaption {
-  margin-top: 10px;
-  font-size: 0.95rem;
-  color: #333;
-  line-height: 1.2;
-  width: 100%;
-  word-wrap: break-word;
-}
-
-
-/* Ogni figura diventa un contenitore verticale uniforme */
-.gallery figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  min-height: 160px; /* garantisce spazio uniforme per immagine + caption */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Link che contiene l'immagine occupa lo spazio necessario */
-.gallery a {
-  display: block;
-  width: 100%;
-}
-
-/* Immagini rettangolari, larghezza fissa, proporzioni mantenute */
-.gallery img {
-  width: 100px;      /* larghezza fissa */
-  height: auto;      /* mantiene proporzioni */
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;
-  transition: transform 0.2s;
-  object-fit: cover;
-}
-
-/* Piccolo effetto hover */
 .gallery img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
-/* Caption (nome) sempre sotto l'immagine, centrato e con margine costante */
+/* Caption sempre sotto l'immagine, centrato */
 .gallery figcaption {
-  margin-top: 10px;
-  font-size: 0.95rem;
+  margin-top: 8px;
+  font-size: 0.92rem;
   color: #333;
-  line-height: 1.2;
+  line-height: 1.15;
   width: 100%;
   word-wrap: break-word;
 }
 
 /* Pagina persona */
 .person-img {
-  max-width: 250px;   /* Foto grande nella pagina personale */
+  max-width: 250px;
   width: 100%;
   height: auto;
   border-radius: 10px;
   display: block;
-  margin: 20px auto;
+  margin: 16px auto;
 }
 
 footer {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
   color: #777;
 }
