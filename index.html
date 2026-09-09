@@ -1,127 +1,111 @@
-/* Font medievale */
-@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* Layout generale */
-body {
-  font-family: Arial, sans-serif;
-  background: #f7f7f7;
-  margin: 0;
-  padding: 0;
-}
+    <!-- Anti-cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
+    <title>Il Gruppo</title>
 
-/* Titoli principali */
-header h1 {
-  text-align: center;
-  margin-bottom: 5px;
-}
+    <!-- CSS con versione anti-cache -->
+    <link rel="stylesheet" href="styles.css?v=1002">
+</head>
 
-.subtitle {
-  text-align: center;
-  color: #666;
-  margin-bottom: 20px;
-}
+<body>
 
-/* Titolo sezione elegante */
-.section-title {
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #1a4ba3;
-  margin: 25px 0 15px;
-  padding: 6px 0;
-  width: 100%;
-  display: block;
-  position: relative;
-}
+    <div class="container">
+        <header>
+            <h1>Il Gruppo</h1>
+            <p class="subtitle">Le nostre foto e descrizioni</p>
+        </header>
 
-.section-title::before,
-.section-title::after {
-  content: "";
-  display: block;
-  width: 60%;
-  height: 3px;
-  background: linear-gradient(to right, transparent, #1a4ba3, transparent);
-  margin: 8px auto;
-  border-radius: 2px;
-}
+        <h2 class="section-title">I membri</h2>
 
-/* GALLERY — SEMPRE 2 PER RIGA */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  margin-bottom: 30px;
-}
+        <div class="gallery">
 
-.gallery figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  min-height: 140px;
-}
+            <figure>
+                <div class="img-wrap">
+                    <a href="persona1.html">
+                        <img src="persona1.jpg" alt="Persona 1">
+                    </a>
+                </div>
+                <figcaption>Nome Persona 1</figcaption>
+            </figure>
 
-/* Wrapper immagine — non taglia */
-.img-wrap {
-  width: 100%;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+            <figure>
+                <div class="img-wrap">
+                    <a href="persona2.html">
+                        <img src="persona2.jpg" alt="Persona 2">
+                    </a>
+                </div>
+                <figcaption>Nome Persona 2</figcaption>
+            </figure>
 
-/* Immagini nella gallery */
-.gallery img {
-  width: 90px;
-  height: auto;
-  max-height: 120px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  transition: transform 0.15s;
-}
+            <figure>
+                <div class="img-wrap">
+                    <a href="persona3.html">
+                        <img src="persona3.jpg" alt="Persona 3">
+                    </a>
+                </div>
+                <figcaption>Nome Persona 3</figcaption>
+            </figure>
 
-.gallery img:hover {
-  transform: scale(1.03);
-}
+            <figure>
+                <div class="img-wrap">
+                    <a href="persona4.html">
+                        <img src="persona4.jpg" alt="Persona 4">
+                    </a>
+                </div>
+                <figcaption>Nome Persona 4</figcaption>
+            </figure>
 
-/* Nome sotto le foto */
-.gallery figcaption {
-  margin-top: 8px;
-  font-size: 1rem;
-  color: #333;
-  font-family: 'Uncial Antiqua', serif;
-}
+            <figure>
+                <div class="img-wrap">
+                    <a href="persona5.html">
+                        <img src="persona5.jpg" alt="Persona 5">
+                    </a>
+                </div>
+                <figcaption>Nome Persona 5</figcaption>
+            </figure>
 
-/* Pagina persona — immagine molto piccola */
-.person-img {
-  max-width: 80px;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  display: block;
-  margin: 16px auto;
-}
+            <figure>
+                <div class="img-wrap">
+                    <a href="persona6.html">
+                        <img src="persona6.jpg" alt="Persona 6">
+                    </a>
+                </div>
+                <figcaption>Nome Persona 6</figcaption>
+            </figure>
 
-/* Descrizione medievale */
-.person-description {
-  font-family: 'Uncial Antiqua', serif;
-  font-size: 1.1rem;
-  color: #333;
-  text-align: center;
-  margin-top: 10px;
-  line-height: 1.4;
-}
+            <figure>
+                <div class="img-wrap">
+                    <a href="persona7.html">
+                        <img src="persona7.jpg" alt="Persona 7">
+                    </a>
+                </div>
+                <figcaption>Nome Persona 7</figcaption>
+            </figure>
 
-footer {
-  text-align: center;
-  margin-top: 30px;
-  color: #777;
-}
+            <figure>
+                <div class="img-wrap">
+                    <a href="persona8.html">
+                        <img src="persona8.jpg" alt="Persona 8">
+                    </a>
+                </div>
+                <figcaption>Nome Persona 8</figcaption>
+            </figure>
+
+        </div>
+
+        <footer>
+            © 2026 Il Gruppo
+        </footer>
+
+    </div>
+
+</body>
+</html>
