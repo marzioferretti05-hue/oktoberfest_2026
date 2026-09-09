@@ -30,7 +30,10 @@ header h1 {
   font-size: 1.3rem;
   margin: 20px 0 10px;
   color: #222;
+  width: 100%;
+  display: block;
 }
+
 
 /* GALLERY compatta */
 .gallery {
