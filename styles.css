@@ -1,0 +1,6 @@
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#fff;color:#111}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.gallery{display:grid;grid-template-columns:1fr;gap:18px}
+.gallery img{width:100%;height:auto;border-radius:8px}
+@media(min-width:700px){.gallery{grid-template-columns:repeat(2,1fr)}}
+figcaption{margin-top:8px;color:#444}
