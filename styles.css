@@ -12,7 +12,7 @@ body {
   padding: 20px;
 }
 
-/* Titoli */
+/* Titoli principali */
 header h1 {
   text-align: center;
   margin-bottom: 5px;
@@ -24,16 +24,28 @@ header h1 {
   margin-bottom: 20px;
 }
 
-/* Titolo sezione */
+/* Titolo sezione elegante */
 .section-title {
   text-align: center;
-  font-size: 1.3rem;
-  margin: 20px 0 10px;
-  color: #222;
-  width: 100%;
-  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1a4ba3; /* blu Baviera */
+  margin: 25px 0 15px;
+  position: relative;
+  padding: 6px 0;
 }
 
+/* Linee decorative sopra e sotto */
+.section-title::before,
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #1a4ba3, transparent);
+  margin: 8px auto;
+  border-radius: 2px;
+}
 
 /* GALLERY compatta */
 .gallery {
@@ -68,29 +80,4 @@ header h1 {
   height: auto;
   max-height: 90px;
   object-fit: cover;
-  border-radius: 8px;
-  display: block;
-}
-
-/* Caption */
-.gallery figcaption {
-  margin-top: 8px;
-  font-size: 0.92rem;
-  color: #333;
-}
-
-/* Pagina persona */
-.person-img {
-  max-width: 250px;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  display: block;
-  margin: 16px auto;
-}
-
-footer {
-  text-align: center;
-  margin-top: 30px;
-  color: #777;
-}
+  border-radius
