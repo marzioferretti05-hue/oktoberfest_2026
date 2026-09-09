@@ -1,4 +1,4 @@
-/* Font medievale per nomi e descrizioni */
+/* Font medievale per le descrizioni */
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 
 /* Layout generale */
@@ -95,9 +95,26 @@ header h1 {
   transform: scale(1.03);
 }
 
-/* Nome sotto le foto — font medievale */
+/* Caption con font medievale */
 .gallery figcaption {
   margin-top: 8px;
   font-size: 1rem;
   color: #333;
-  font-family: 'Uncial Antiqu
+  font-family: 'Uncial Antiqua', serif;
+}
+
+/* Pagina persona */
+.person-img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 16px auto;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #777;
+}
