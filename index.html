@@ -12,31 +12,43 @@
   <title>Il Gruppo</title>
 
   <!-- CSS con versione anti-cache -->
-  <link rel="stylesheet" href="styles.css?v=1006" />
+  <link rel="stylesheet" href="styles.css?v=1010" />
 </head>
 <body>
+
+  <!-- Pulsanti lingua -->
+  <div class="lang-buttons">
+    <button onclick="setLanguage('it')">IT</button>
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('de')">DE</button>
+  </div>
+
   <div class="container">
 
     <!-- Logo e testo iniziale -->
     <header class="hero">
       <img src="immagini/logo.jpeg" alt="Logo" class="site-logo" />
-      <h1>OKTOBERFEST 2K26</h1>
-      <p class="subtitle">
-        frase di introduzione.
+
+      <h1 id="main-title">Benvenuti nel nostro spazio</h1>
+
+      <p class="subtitle" id="main-subtitle">
+        Qui condividiamo le nostre foto, le frasi ispiratrici e le storie che ci rappresentano.
+        Scorri per conoscere i membri del gruppo.
       </p>
     </header>
 
     <!-- Sezione gruppo -->
-    <h2 class="section-title">I membri</h2>
+    <h2 class="section-title" id="members-title">I membri</h2>
 
     <div class="gallery">
+
       <figure>
         <div class="img-wrap">
           <a href="persona1.html">
             <img src="immagini/persona1.jpeg" alt="Persona 1" />
           </a>
         </div>
-        <figcaption>il bruss</figcaption>
+        <figcaption>Nome Persona 1</figcaption>
       </figure>
 
       <figure>
@@ -101,9 +113,38 @@
         </div>
         <figcaption>Nome Persona 8</figcaption>
       </figure>
+
     </div>
 
     <footer>© 2026 Il Gruppo</footer>
   </div>
+
+  <!-- Script traduzione -->
+  <script>
+    const translations = {
+      it: {
+        title: "Benvenuti nel nostro spazio",
+        subtitle: "Qui condividiamo le nostre foto, le frasi ispiratrici e le storie che ci rappresentano. Scorri per conoscere i membri del gruppo.",
+        members: "I membri"
+      },
+      en: {
+        title: "Welcome to our space",
+        subtitle: "Here we share our photos, inspiring phrases and the stories that represent us. Scroll down to meet the group members.",
+        members: "Members"
+      },
+      de: {
+        title: "Willkommen in unserem Bereich",
+        subtitle: "Hier teilen wir unsere Fotos, inspirierende Sätze und die Geschichten, die uns repräsentieren. Scrollen Sie nach unten, um die Gruppenmitglieder kennenzulernen.",
+        members: "Mitglieder"
+      }
+    };
+
+    function setLanguage(lang) {
+      document.getElementById("main-title").textContent = translations[lang].title;
+      document.getElementById("main-subtitle").textContent = translations[lang].subtitle;
+      document.getElementById("members-title").textContent = translations[lang].members;
+    }
+  </script>
+
 </body>
 </html>
