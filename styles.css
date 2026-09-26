@@ -167,6 +167,11 @@ header h1 {
   align-items: start;
 }
 
+/* Centra l'ultimo elemento se la lista ha un numero dispari di membri (es. il 17°) */
+.gallery figure:last-child:nth-child(odd) {
+  grid-column: span 2;
+}
+
 .gallery figure {
   display: flex;
   flex-direction: column;
@@ -264,5 +269,9 @@ footer {
 
   .gallery {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery figure:last-child:nth-child(odd) {
+    grid-column: span 1;
   }
 }
