@@ -16,9 +16,12 @@
 </head>
 <body>
 
-  <!-- Pulsante per tornare alla Home -->
+  <!-- Pulsanti lingua e Home -->
   <div class="lang-buttons">
     <button onclick="location.href='index.html'">← Home</button>
+    <button onclick="setLanguage('it')">IT</button>
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('de')">DE</button>
   </div>
 
   <div class="container">
@@ -31,23 +34,23 @@
     </header>
 
     <!-- Titolo della Sezione -->
-    <h2 class="section-title">Offrici una Birra</h2>
+    <h2 class="section-title" id="donation-title">Offrici una Birra</h2>
 
-    <!-- Immagine centrale (usa la classe person-img) -->
+    <!-- Immagine centrale -->
     <img src="immagini/boccale.jpeg" alt="Donazione" class="person-img" />
 
-    <!-- Box scheda descrizione (usa la classe person-description-box) -->
+    <!-- Box scheda descrizione -->
     <div class="person-description-box">
-      <p class="person-description">
+      <p class="person-description" id="donation-text">
         <span class="dropcap">S</span>e desideri sostenere la causa e rifornire i nostri boccali all'Oktoberfest, qui sotto trovi i link diretti per inviarci un piccolo contributo. Come promesso, non verrà usato per cause nobili ma per mantenere alto il livello di luppolo!
       </p>
 
       <!-- Link esterni per il pagamento -->
       <div style="text-align: center; margin-top: 25px; display: flex; flex-direction: column; gap: 12px; align-items: center;">
         <a href="https://paypal.me/TUO_LINK" target="_blank" style="background: #0070ba; color: white; padding: 10px 24px; border-radius: 20px; text-decoration: none; font-weight: bold; font-family: sans-serif; width: 80%; max-width: 260px; display: inline-block;">
-          Paypal
+          PayPal
         </a>
-        <a href="https://revolut.me/marzio05" target="_blank" style="background: #000000; color: white; padding: 10px 24px; border-radius: 20px; text-decoration: none; font-weight: bold; font-family: sans-serif; width: 80%; max-width: 260px; display: inline-block;">
+        <a href="https://revolut.me/TUO_LINK" target="_blank" style="background: #000000; color: white; padding: 10px 24px; border-radius: 20px; text-decoration: none; font-weight: bold; font-family: sans-serif; width: 80%; max-width: 260px; display: inline-block;">
           Revolut
         </a>
       </div>
@@ -56,6 +59,29 @@
     <footer>© 2026 Il Gruppo</footer>
 
   </div>
+
+  <!-- Script per le traduzioni -->
+  <script>
+    const translations = {
+      it: {
+        title: "Offrici una Birra",
+        text: '<span class="dropcap">S</span>e desideri sostenere la causa e rifornire i nostri boccali all\'Oktoberfest, qui sotto trovi i link diretti per inviarci un piccolo contributo. Come promesso, non verrà usato per cause nobili ma per mantenere alto il livello di luppolo!'
+      },
+      en: {
+        title: "Buy Us a Beer",
+        text: '<span class="dropcap">I</span>f you want to support the cause and refill our beer mugs at Oktoberfest, below you\'ll find direct links to send us a small contribution. As promised, it won\'t be used for noble causes, just to keep the hops flowing!'
+      },
+      de: {
+        title: "Spendier uns ein Bier",
+        text: '<span class="dropcap">W</span>enn du unser Vorhaben unterstützen und unsere Bierkrüge auf dem Oktoberfest nachfüllen möchtest, findest du unten die direkten Links für eine kleine Spende. Wie versprochen wird das Geld für keine edlen Zwecke verwendet, sondern nur um den Hopfenpegel hoch zu halten!'
+      }
+    };
+
+    function setLanguage(lang) {
+      document.getElementById("donation-title").textContent = translations[lang].title;
+      document.getElementById("donation-text").innerHTML = translations[lang].text;
+    }
+  </script>
 
 </body>
 </html>
