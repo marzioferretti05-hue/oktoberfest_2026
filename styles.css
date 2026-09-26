@@ -166,7 +166,7 @@ header h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Testo descrizione ad alta leggibilità */
+/* Testo descrizione ad alta leggibilità e centrato */
 .person-description {
   font-family: "Georgia", "Times New Roman", serif;
   font-size: 1.15rem;
@@ -177,15 +177,15 @@ header h1 {
   line-height: 1.6;
 }
 
-/* Capolettera (Prima lettera stilizzata) */
+/* Capolettera integrato direttamente nel testo centrato */
 .dropcap {
-  float: left;
+  float: none;
+  display: inline-block;
   font-family: 'Uncial Antiqua', serif;
-  font-size: 3.5rem;
-  line-height: 0.8;
-  padding-right: 8px;
-  padding-top: 6px;
+  font-size: 2.2rem;
   color: #1a4ba3;
+  line-height: 1;
+  vertical-align: -2px;
 }
 
 /* --- FOOTER & RESPONSIVE --- */
