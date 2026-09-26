@@ -15,7 +15,7 @@ body {
   padding: 20px;
 }
 
-/* --- PULSANTI LINGUA & DONATION --- */
+/* --- PULSANTI LINGUA (IN ALTO A SINISTRA) --- */
 .lang-buttons {
   position: fixed;
   top: 10px;
@@ -40,13 +40,16 @@ body {
   background: #163b82;
 }
 
-/* Pulsante Donation Esuberante ed Animato */
-.lang-buttons .donation-btn {
+/* --- PULSANTE DONATION (IN ALTO A DESTRA) --- */
+.donation-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
   display: inline-flex;
   align-items: center;
   gap: 6px;
   padding: 6px 14px;
-  margin-left: 6px;
   font-family: 'Georgia', serif;
   font-weight: 800;
   font-size: 0.9rem;
@@ -55,7 +58,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   
-  /* Sfondo gradiente birra/oro brillante */
+  /* Sfondo gradiente oro/arancione brillante */
   background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%);
   border: 2px solid #ffffff;
   border-radius: 25px;
@@ -71,7 +74,7 @@ body {
 }
 
 /* Effetto Hover (Passaggio del mouse) */
-.lang-buttons .donation-btn:hover {
+.donation-btn:hover {
   animation: none;
   transform: translateY(-3px) scale(1.12) rotate(-3deg);
   background: linear-gradient(135deg, #ffe033 0%, #ff6600 100%);
@@ -80,7 +83,7 @@ body {
 }
 
 /* Effetto Click */
-.lang-buttons .donation-btn:active {
+.donation-btn:active {
   transform: translateY(1px) scale(0.98) rotate(0deg);
   box-shadow: 0 2px 8px rgba(255, 140, 0, 0.5);
 }
