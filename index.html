@@ -16,11 +16,12 @@
 </head>
 <body>
 
-  <!-- Pulsanti lingua -->
+  <!-- Pulsanti lingua e Donazione -->
   <div class="lang-buttons">
     <button onclick="setLanguage('it')">IT</button>
     <button onclick="setLanguage('en')">EN</button>
     <button onclick="setLanguage('de')">DE</button>
+    <a href="donation.html" class="donation-btn">🍺 Donation</a>
   </div>
 
   <div class="container">
@@ -224,7 +225,7 @@
     };
 
     function setLanguage(lang) {
-      document.getElementById("main-title").textContent = translations[lang].title;
+      document.getElementById("main-title").textContent = translations[lang].textContent;
       document.getElementById("main-subtitle").textContent = translations[lang].subtitle;
       document.getElementById("members-title").textContent = translations[lang].members;
     }
