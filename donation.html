@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Anti-cache -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <title>Donazione - Il Gruppo</title>
+
+  <!-- CSS con versione anti-cache -->
+  <link rel="stylesheet" href="styles.css?v=1010" />
+</head>
+<body>
+
+  <!-- Pulsante per tornare alla Home -->
+  <div class="lang-buttons">
+    <button onclick="location.href='index.html'">← Home</button>
+  </div>
+
+  <div class="container">
+
+    <!-- Header con Logo Piccolo -->
+    <header class="hero small-hero">
+      <a href="index.html">
+        <img src="immagini/logo.jpeg" alt="Logo" class="site-logo small-logo" />
+      </a>
+    </header>
+
+    <!-- Titolo della Sezione -->
+    <h2 class="section-title">Offrici una Birra</h2>
+
+    <!-- Immagine centrale (usa la classe person-img) -->
+    <img src="immagini/boccale.jpeg" alt="Donazione" class="person-img" />
+
+    <!-- Box scheda descrizione (usa la classe person-description-box) -->
+    <div class="person-description-box">
+      <p class="person-description">
+        <span class="dropcap">S</span>e desideri sostenere la causa e rifornire i nostri boccali all'Oktoberfest, qui sotto trovi i link diretti per inviarci un piccolo contributo. Come promesso, non verrà usato per cause nobili ma per mantenere alto il livello di luppolo!
+      </p>
+
+      <!-- Link esterni per il pagamento -->
+      <div style="text-align: center; margin-top: 25px; display: flex; flex-direction: column; gap: 12px; align-items: center;">
+        <a href="https://paypal.me/TUO_LINK" target="_blank" style="background: #0070ba; color: white; padding: 10px 24px; border-radius: 20px; text-decoration: none; font-weight: bold; font-family: sans-serif; width: 80%; max-width: 260px; display: inline-block;">
+          Paypal
+        </a>
+        <a href="https://revolut.me/TUO_LINK" target="_blank" style="background: #000000; color: white; padding: 10px 24px; border-radius: 20px; text-decoration: none; font-weight: bold; font-family: sans-serif; width: 80%; max-width: 260px; display: inline-block;">
+          Revolut
+        </a>
+      </div>
+    </div>
+
+    <footer>© 2026 Il Gruppo</footer>
+
+  </div>
+
+</body>
+</html>
