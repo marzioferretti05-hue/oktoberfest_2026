@@ -15,12 +15,15 @@ body {
   padding: 20px;
 }
 
-/* --- PULSANTI LINGUA --- */
+/* --- PULSANTI LINGUA & DONATION --- */
 .lang-buttons {
   position: fixed;
   top: 10px;
   left: 10px;
   z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .lang-buttons button {
@@ -28,7 +31,6 @@ body {
   color: white;
   border: none;
   padding: 6px 10px;
-  margin-right: 6px;
   border-radius: 6px;
   cursor: pointer;
   font-size: 0.9rem;
@@ -36,6 +38,62 @@ body {
 
 .lang-buttons button:hover {
   background: #163b82;
+}
+
+/* Pulsante Donation Esuberante ed Animato */
+.lang-buttons .donation-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  margin-left: 6px;
+  font-family: 'Georgia', serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: #222222;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  
+  /* Sfondo gradiente birra/oro brillante */
+  background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  
+  /* Ombra 3D con effetto bagliore */
+  box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.6);
+  
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* Animazione continua per attirare l'attenzione */
+  animation: partyPulse 2.5s infinite ease-in-out;
+}
+
+/* Effetto Hover (Passaggio del mouse) */
+.lang-buttons .donation-btn:hover {
+  animation: none;
+  transform: translateY(-3px) scale(1.12) rotate(-3deg);
+  background: linear-gradient(135deg, #ffe033 0%, #ff6600 100%);
+  color: #000000;
+  box-shadow: 0 8px 25px rgba(255, 140, 0, 0.8), inset 0 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+/* Effetto Click */
+.lang-buttons .donation-btn:active {
+  transform: translateY(1px) scale(0.98) rotate(0deg);
+  box-shadow: 0 2px 8px rgba(255, 140, 0, 0.5);
+}
+
+/* Animazione di pulsazione continua */
+@keyframes partyPulse {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.07) rotate(2deg);
+    box-shadow: 0 8px 22px rgba(255, 140, 0, 0.7);
+  }
 }
 
 /* --- HERO & LOGHI --- */
